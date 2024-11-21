@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Connect - Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: left;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 16px;
+            width: 100%;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #FF5252;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #FF1744;
+        }
+
+        .forgot-password {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+
+ button:hover {
+            background-color: #a61c1c;
+        }
+
+ #arrowButton {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #ff512f, #dd2476); /* Gradient background */
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effects */
+    }
+#arrowButton:hover {
+      transform: scale(1.1); /* Scale up the button on hover */
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+    }
+    </style>
+</head>
+<body><a href="Blood connect.html"><button id="arrowButton"><b>Home</b></button></a>
+    <div class="container">
+        <form id="loginForm">
+            <h2>Welcome to Blood Connect</h2>
+            <label for="Email">Email:</label>
+            <input type="text" id="Email" name="Email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="submitForm()">Login</button>
+          <center>  <div class="forgot-password" onclick="forgotPassword()">Forgot Password?</div></center>
+        </form>
+    </div>
+    <script>
+        function submitForm() {
+            // Add your form submission logic here
+        }
+
+        function forgotPassword() {
+            // Add your forgot password logic here
+        }
+    </script>
+</body>
+</html>

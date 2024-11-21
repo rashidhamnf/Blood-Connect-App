@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Blood Connect - Contact Us</title>
+    <style>
+        /* Additional styles for the contact form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 40%;
+            margin: 0 auto;
+        }
+
+        #contacts {
+            padding: 40px 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        #contacts h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        #contacts label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        #contacts input[type="text"],
+        #contacts textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #contacts textarea {
+            resize: vertical;
+        }
+
+        #contacts button[type="submit"] {
+            padding: 12px 24px;
+            background-color: #FF5252;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        #contacts button[type="submit"]:hover {
+            background-color: #FF5252;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+
+ button:hover {
+            background-color: #a61c1c;
+        }
+
+ #arrowButton {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, #ff512f, #dd2476); /* Gradient background */
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      font-size: 14px;
+      cursor: pointer;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Transition effects */
+    }
+#arrowButton:hover {
+      transform: scale(1.1); /* Scale up the button on hover */
+      box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Increase shadow on hover */
+    }
+    </style>
+</head>
+<body><a href="Blood connect.html"><button id="arrowButton"><b>Home</b></button></a>
+    <div class="container">
+        <section id="contacts">
+            <form id="contactForm" method="post" action="">
+                <h2>Contact Us</h2>
+                <!-- PHP messages can be displayed here -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+   
+</body>
+</html>
